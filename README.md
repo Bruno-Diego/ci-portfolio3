@@ -1,31 +1,61 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# CI Hangman Game
 
-Welcome USER_NAME,
+![](./assets/docs/responsiveness.png)
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+[Access the Live CI Hangman Game Website here](https://#) (Ctrl + Click to open on a new tab)
 
-## Reminders
+## Table of Contents
+1. [**UX**](#ux)
+    - [**Purpose of the project**](#purpose-of-the-project)
+    - [**User stories**](#user-stories)
+    - [**Features**](#features)
+    - [**Future features**](#future-features)
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+2. [**Typography and color scheme**](#typography-and-color-scheme)
 
-## Creating the Heroku app
+3. [**Wireframes**](#wireframes)
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+4. [**Technologies Used**](#technologies-used)
+    - [**Code validation**](#code-validation)
+    - [**Test cases (user story based with screenshots)**](#test-cases)
+    - [**Fixed bugs**](#fixed-bugs)
+    - [**Supported screens and browsers**](#supported-screens-and-browsers)
 
-1. `heroku/python`
-2. `heroku/nodejs`
+5. [**Deployment**](#deployment)
+    - [**Via Gitpod**](#via-gitpod)
+    - [**Via Github Pages**](#via-github-pages)
+6. [**Credits**](#credits)
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+---
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+## UX
 
-Connect your GitHub repository and deploy as normal.
+## Purpose of the project
 
-## Constraints
+## User stories
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+## Features
 
------
-Happy coding!
+## Future features
+
+## Typography and color scheme
+
+## Wireframes
+
+## Technologies Used
+
+## Code validation
+
+## Test cases
+
+## Fixed bugs 
+
+## Supported screens and browsers
+
+## Deployment 
+
+## Via Gitpod 
+
+## Via Github Pages
+
+## Credits 
