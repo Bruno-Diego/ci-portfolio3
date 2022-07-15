@@ -46,19 +46,31 @@ This website is made of the following sections:
 
 The business goal for this website is to give the user a fun and challenging game.
 
-The target users are:
+This game is created for anyone who wants to have fun playing a word game. Also this game is a good introduction to the terminal window for anyone who is not familiar with terminal environment. The target users are:
 
   - People of all ages.
   - Interested in playing a game that is challenging and fun at the same time.
+  - Interested in enjoy playing word game.
 
 What these users would be looking for:
 
   - A game that can be played to pass time without being too stressful.
   - A game hangman game with random words to be discovered.
+  - Win the game and get winning message when it is achieved.
+  - Having clear feedback for their action.
 
 This game was crafted using the mock terminal setting provided by Code Institute's template. It was created to give birth to the Tirdth "Portfolio Project" to complete as part of the Diploma in Full Stack Software Development course at Code Institute in Dublin, Republic of Ireland.
 
 ## User stories
+
+- As a **visitor**, I can have a clear instruction on what's the game objective and process.
+- As a **visitor**, I can have a clear feedback for my actions.
+- As a **visitor**, I can have a graphical display as a fun factor.
+- As a **visitor**, I can have a quick response time.
+- As a **visitor**, I can have a feedback for every input.
+- As a **visitor**, I can get random words for the challenge.
+- As a **visitor**, I can get random words for the challenge.
+- As a **visitor**, I can get the choice to skip the instruction and start the game.
 
 ## Features
 
