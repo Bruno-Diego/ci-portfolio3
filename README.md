@@ -13,7 +13,7 @@
 
 2. [**Typography and color scheme**](#typography-and-color-scheme)
 
-3. [**Wireframes**](#wireframes)
+3. [**Fluxogram**](#fluxogram)
 
 4. [**Technologies Used**](#technologies-used)
     - [**Code validation**](#code-validation)
@@ -74,13 +74,53 @@ This game was crafted using the mock terminal setting provided by Code Institute
 
 ## Features
 
+The game has the following features:
+
+ - Display greetings with user name
+ - Display the instruction when user opts for
+ - Category choice user can select from
+ - Playing the game
+ - Choice to play again or exit the game
+
 ## Future features
+
+  - For the future deployments to the game, I would like to implement a option to the user select types or groups of words;
+  
+  - Besides, I would like to implement a validation of the word to verify if the random word provided by the API is a real word;
 
 ## Typography and color scheme
 
-## Wireframes
+ - I have created variables to color my texts to make it easier for the user to read the story. For colors I have used colorama.
+
+  ![](./assets/colorama.png)
+
+ - For the text on the banner and ending messages, I used Pyfiglet that create fancy texts with large fonts & sizes in the output.
+
+## Fluxogram
+
+This website was first planned from scratch on Lucidchart with the free license for trial as can be seen by the fluxogram below.
+
+  ![](./assets/fluxogram.png)
+
+Please note the actual website has changed slightly from these wireframes.
 
 ## Technologies Used
+
+I have used several technologies that have enabled this game to work:
+
+  - [GitHub](https://github.com/)
+    - Used to store code for the project after being pushed.
+  - [Git](https://git-scm.com/)
+    - Used for version control by utilising the Gitpod terminal to commit to Git and Push to GitHub.
+  - [Gitpod](https://www.gitpod.io/)
+    - Used as the development environment.
+  - [AmIResponsive](http://ami.responsivedesign.is/)
+    - Used to generate repsonsive image used in README file.
+  - [Pyfiglet](https://pypi.org/project/pyfiglet/0.7/)
+    - Python module that comes with many functions, and we can use these functions in a Python program to create fancy texts with large fonts & sizes in the output.
+  - [Colorama](https://pypi.org/project/colorama/)
+    - Built-in Python module to display the text in different colors. It is used to make the code more readable. Three formatting options are available in this module for coloring text.
+
 
 ## Code validation
 
