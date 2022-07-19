@@ -9,7 +9,7 @@ from typingMode import typingMode
 
 
 # Setting the stage number to be used as limit for incorrect attempts
-stages = ['\n  +---+\n  |   |\n      |\n      |\n      |\n      |\n=========\n',
+STAGES = ['\n  +---+\n  |   |\n      |\n      |\n      |\n      |\n=========\n',
           '\n  +---+\n  |   |\n  O   |\n      |\n      |\n      |\n=========\n',
           '\n  +---+\n  |   |\n  O   |\n  |   |\n      |\n      |\n=========\n',
           '\n  +---+\n  |   |\n  O   |\n /|   |\n      |\n      |\n=========\n',
@@ -17,7 +17,8 @@ stages = ['\n  +---+\n  |   |\n      |\n      |\n      |\n      |\n=========\n',
           '\n  +---+\n  |   |\n  O   |\n /|\  |\n /    |\n      |\n=========\n',
           '\n  +---+\n  |   |\n  O   |\n /|\  |\n / \  |\n      |\n=========\n',
           '\n  +---+\n  |   |\n  O   |\n /|\  |\n / \  |\n      |\n=========\n| LAST CHANCE!\n']
-attempts = len(stages)
+
+ATTEMPTS = len(STAGES)
 
 
 
@@ -69,7 +70,7 @@ def start_game():
     word = getWord().upper()    # Random word chosen by the function
     answers = [i for i in word]    # Create list from the word
     wrong_guess = []   # Incorrect letters goes in here
-    while incorrect < attempts:
+    while incorrect < ATTEMPTS:
         display_guess_message()
         """
         Print out _ for the remaining letters to guess
@@ -105,12 +106,12 @@ def start_game():
                 else:
                     print(f"'{guessed.upper()}' is not in correct answer!")
                 incorrect += 1    # Increment incorrect attempt
-                if incorrect == attempts:
+                if incorrect == ATTEMPTS:
                     print(f"Answer is {word.upper()}")
                     game_over()
                     break
                 else:
-                    print(stages[incorrect])  # Display hangman image
+                    print(STAGES[incorrect])  # Display hangman image
                     wrong_guess.append(guessed.upper())
                     print(f"Your incorrect guesses: {wrong_guess} ")
                     time.sleep(1)
