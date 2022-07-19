@@ -6,7 +6,7 @@ url = "https://random-words5.p.rapidapi.com/getMultipleRandom"
 querystring = {"count":"2","minLength":"6","maxLength":"10"}
 
 headers = {
-	"X-RapidAPI-Key": os.environ.RAPID_API_KEY,
+	"X-RapidAPI-Key": os.environ.get("RAPID_API_KEY"),
 	"X-RapidAPI-Host": "random-words5.p.rapidapi.com"
 }
 
