@@ -1,6 +1,11 @@
 import random
 import time
 from welcome import welcome
+from ending import game_over, you_win
+from word import getWord
+from pyfiglet import Figlet
+from colorama import Fore
+from typingMode import typingMode
 
 
 # Setting the stage number to be used as limit for incorrect attempts
