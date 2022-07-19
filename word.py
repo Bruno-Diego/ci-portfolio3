@@ -1,4 +1,5 @@
-import requests 
+import requests
+import os
 import json
 
 url = "https://random-words5.p.rapidapi.com/getMultipleRandom"
