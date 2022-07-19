@@ -1,5 +1,6 @@
 import requests
 import os
+from dotenv import load_dotenv
 import json
 
 url = "https://random-words5.p.rapidapi.com/getMultipleRandom"
