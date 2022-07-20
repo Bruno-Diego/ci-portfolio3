@@ -29,7 +29,6 @@ STAGES = ['\n  +---+\n  |   |\n      |\n\
 ATTEMPTS = len(STAGES)
 
 
-
 def display_instructions():
     """
     Ask user if instruction is need and displays instruction as requested
@@ -65,7 +64,6 @@ def instructions_text():
           "   and hangman image completes, game over!")
 
 
-
 def start_game():
     """
     Main game function to display questions, check the answer and
@@ -80,9 +78,7 @@ def start_game():
     wrong_guess = []   # Incorrect letters goes in here
     while incorrect < ATTEMPTS:
         display_guess_message()
-        """
-        Print out _ for the remaining letters to guess
-        """
+        # Print out _ for the remaining letters to guess
         for i in word:
             if i in correct_guess:
                 print(i, end=" ")
@@ -90,29 +86,30 @@ def start_game():
                 print("_", end=" ")
         print('\n')
         guessed = input("Enter one letter please!\n").upper()
-        if str.isalpha(guessed): # Checking if the input is non-numeric
-            if guessed in answers:  # Checking the answer and determine the action
+        if str.isalpha(guessed):  # Checking if the input is non-numeric
+            if len(guessed) > 1:
+                print("***** Please input one letter at a time *****")
+                time.sleep(1)
+            elif guessed in answers:
+                # Checking the answer and determine action
                 if guessed in correct_guess:
                     display_already_used()
                     time.sleep(1)
                 else:
                     print(f"{guessed.upper()} is the right answer!")
-                    correct_guess.add(guessed)   # Add correct letter to the list
+                    correct_guess.add(guessed)  # Add correct letter to list
                     if correct_guess == set(word):
                         print(word.upper())
-                        print(f"CONGRATULATIONS!"
-                            f"You completed the word {word.upper()}. YOU WIN!")
+                        print("CONGRATULATIONS!")
+                        print(f"You completed the word {word.upper()}.")
                         you_win()
                         break
                     time.sleep(1)
             elif guessed in wrong_guess:
                 display_already_used()
-                time.sleep(1) 
+                time.sleep(1)
             else:
-                if len(guessed) > 1:
-                    print("***** Please input one letter at a time *****")
-                else:
-                    print(f"'{guessed.upper()}' is not in correct answer!")
+                print(f"'{guessed.upper()}' is not in correct answer!")
                 incorrect += 1    # Increment incorrect attempt
                 if incorrect == ATTEMPTS:
                     print(f"Answer is {word.upper()}")
@@ -152,7 +149,6 @@ def replay():
     else:
         print("Thank you for playing the game")
         time.sleep(1)
-
 
 
 def main():

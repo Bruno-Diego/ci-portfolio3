@@ -5,7 +5,6 @@ from colorama import Fore
 from typingMode import typingMode
 
 
-
 def welcome():
     """This function prints the welcome message to the user"""
     titleFont = Figlet(font="doom")
@@ -21,10 +20,12 @@ def welcome():
     while True:
         user_name = input("Please enter your name: \n")
         if str.isalpha(user_name):
-            welcomeMessage = subtitleFont.renderText(f"Welcome to the hangman game, {user_name}")
+            welcomeMessage = subtitleFont.renderText(f"Welcome \
+            to the hangman game, {user_name}")
             print(Fore.LIGHTBLUE_EX + welcomeMessage + Fore.RESET)
             break
         elif len(user_name) == 0:
-            print("Insufficient characters. Please enter your name or nickname.")
+            print("Insufficient characters.\
+             Please enter your name or nickname.")
         else:
             print("Only letters are allowed")
