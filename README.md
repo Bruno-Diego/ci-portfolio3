@@ -64,13 +64,12 @@ This game was crafted using the mock terminal setting provided by Code Institute
 ## User stories
 
 - As a **visitor**, I can have a clear instruction on what's the game objective and process.
+- As a **visitor**, I can get the choice to skip the instruction and start the game.
+- As a **visitor**, I can get random words for the challenge.
 - As a **visitor**, I can have a clear feedback for my actions.
 - As a **visitor**, I can have a graphical display as a fun factor.
 - As a **visitor**, I can have a quick response time.
 - As a **visitor**, I can have a feedback for every input.
-- As a **visitor**, I can get random words for the challenge.
-- As a **visitor**, I can get random words for the challenge.
-- As a **visitor**, I can get the choice to skip the instruction and start the game.
 
 ## Features
 
@@ -120,6 +119,8 @@ I have used several technologies that have enabled this game to work:
     - Python module that comes with many functions, and we can use these functions in a Python program to create fancy texts with large fonts & sizes in the output.
   - [Colorama](https://pypi.org/project/colorama/)
     - Built-in Python module to display the text in different colors. It is used to make the code more readable. Three formatting options are available in this module for coloring text.
+  - [RapidAPI](https://rapidapi.com/)
+    - Used to provide an API that generates a random word.
 
 
 ## Code validation
@@ -143,7 +144,36 @@ I have used several technologies that have enabled this game to work:
 
 ## Test cases
 
+1. **As a visitor, I can get the choice to skip the instruction and start the game.**
+  - The game begins showing the banner to the user.
+  - The game ask for the user to input his name.
+  - A welcome message is displayed to the user.
+  - The game ask to the user if he wants to check the instructions by pressing "y" or start the game by pressing any other key.
+  ![](./assets/opening.png)
 
+2. **As a visitor, I can have a clear instruction on what's the game objective and process.**
+  - The game ask to the user if he wants to check the instructions by pressing "y" or start the game by pressing any other key.
+  - The user type "y" and press enter.
+  - The instructions are displayed.
+  ![](./assets/instructions.png)
+
+3. **As a visitor, I can get random words for the challenge.**
+  - The game ask to the user if he wants to check the instructions by pressing "y" or start the game by pressing any other key.
+  - The user type any other key or just press enter.
+  - A random word is provided by an API and a message asking for a letter is displayed to the user.
+  ![]()
+4. **As a visitor, I can have a clear feedback for my actions.**
+  - 
+  ![]()
+5. **As a visitor, I can have a graphical display as a fun factor.**
+  - 
+  ![]()
+6. **As a visitor, I can have a quick response time.**
+  - 
+  ![]()
+7. **As a visitor, I can have a feedback for every input.**
+  - 
+  ![]()
 
 ## Fixed bugs 
 
