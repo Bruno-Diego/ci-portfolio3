@@ -9,7 +9,7 @@ def game_over():
     """
     GAME OVER ascii art with figlet
     """
-    gameOverTitleFont = Figlet(font="alligator")
+    gameOverTitleFont = Figlet(font="larry3d")
     gameOverText = gameOverTitleFont.renderText("Game Over")
     print(Fore.LIGHTRED_EX + gameOverText + Fore.RESET)
     typingMode("Better luck next time!\n")
