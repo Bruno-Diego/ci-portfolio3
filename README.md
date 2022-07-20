@@ -147,33 +147,49 @@ I have used several technologies that have enabled this game to work:
 1. **As a visitor, I can get the choice to skip the instruction and start the game.**
   - The game begins showing the banner to the user.
   - The game ask for the user to input his name.
-  - A welcome message is displayed to the user.
+  - If the user provide a number or an empty input, an error is displayed.
+  - The user provides a name and a welcome message is displayed.
   - The game ask to the user if he wants to check the instructions by pressing "y" or start the game by pressing any other key.
+
   ![](./assets/opening.png)
 
 2. **As a visitor, I can have a clear instruction on what's the game objective and process.**
   - The game ask to the user if he wants to check the instructions by pressing "y" or start the game by pressing any other key.
   - The user type "y" and press enter.
-  - The instructions are displayed.
+  - The instructions are displayed to the user.
+
   ![](./assets/instructions.png)
 
 3. **As a visitor, I can get random words for the challenge.**
   - The game ask to the user if he wants to check the instructions by pressing "y" or start the game by pressing any other key.
   - The user type any other key or just press enter.
-  - A random word is provided by an API and a message asking for a letter is displayed to the user.
-  ![]()
+  - A random word is provided by an API.
+  - A message asking for a letter is displayed to the user.
+
+  ![](./assets/input.png)
+
 4. **As a visitor, I can have a clear feedback for my actions.**
-  - 
-  ![]()
+  - The game ask the user to input a letter.
+  - If the user provide more than one letter, or a number, or a empty input, an error is displayed.
+  - The user provides one letter.
+  - If the letter belongs in the random word, the a feedback message is displayed informing the user that it's a correct letter.
+  - If the letter does not belong in the random word, the a feedback message is displayed informing the user that it's a wrong letter.
+
+  ![](./assets/correct.png)
+
+  ![](./assets/wrong.png)
+
 5. **As a visitor, I can have a graphical display as a fun factor.**
-  - 
-  ![]()
-6. **As a visitor, I can have a quick response time.**
-  - 
-  ![]()
-7. **As a visitor, I can have a feedback for every input.**
-  - 
-  ![]()
+  - The wrong answers from the user are indicated by the hangman image that is built by pieces over the console.
+  - When the user wins the game, a graphycal text is shown in blue.
+  - When the user looses the game, a graphycal text is shown in red.
+
+  ![](./assets/hangman.png)
+  
+  ![](./assets/win.png)
+  
+  ![](./assets/gameover.png)
+
 
 ## Fixed bugs 
 
