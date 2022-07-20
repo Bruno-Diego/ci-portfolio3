@@ -9,14 +9,22 @@ from typingMode import typingMode
 
 
 # Setting the stage number to be used as limit for incorrect attempts
-STAGES = ['\n  +---+\n  |   |\n      |\n      |\n      |\n      |\n=========\n',
-          '\n  +---+\n  |   |\n  O   |\n      |\n      |\n      |\n=========\n',
-          '\n  +---+\n  |   |\n  O   |\n  |   |\n      |\n      |\n=========\n',
-          '\n  +---+\n  |   |\n  O   |\n /|   |\n      |\n      |\n=========\n',
-          '\n  +---+\n  |   |\n  O   |\n /|\  |\n      |\n      |\n=========\n',
-          '\n  +---+\n  |   |\n  O   |\n /|\  |\n /    |\n      |\n=========\n',
-          '\n  +---+\n  |   |\n  O   |\n /|\  |\n / \  |\n      |\n=========\n',
-          '\n  +---+\n  |   |\n  O   |\n /|\  |\n / \  |\n      |\n=========\n| LAST CHANCE!\n']
+STAGES = ['\n  +---+\n  |   |\n      |\n\
+      |\n      |\n      |\n=========\n',
+          '\n  +---+\n  |   |\n  O   |\n\
+      |\n      |\n      |\n=========\n',
+          '\n  +---+\n  |   |\n  O   |\n\
+  |   |\n      |\n      |\n=========\n',
+          '\n  +---+\n  |   |\n  O   |\n\
+ /|   |\n      |\n      |\n=========\n',
+          '\n  +---+\n  |   |\n  O   |\n\
+ /|\  |\n      |\n      |\n=========\n',
+          '\n  +---+\n  |   |\n  O   |\n\
+ /|\  |\n /    |\n      |\n=========\n',
+          '\n  +---+\n  |   |\n  O   |\n\
+ /|\  |\n / \  |\n      |\n=========\n',
+          '\n  +---+\n  |   |\n  O   |\n\
+ /|\  |\n / \  |\n      |\n=========\n| LAST CHANCE!\n']
 
 ATTEMPTS = len(STAGES)
 
