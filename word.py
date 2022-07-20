@@ -12,14 +12,14 @@ headers = {
     "X-RapidAPI-Host": "random-words5.p.rapidapi.com"
 }
 
-response = requests.request("GET", url, headers=headers, params=querystring)
-
 
 def getWord():
     """
     Function used to get the first word
     from the response sent by the API
     """
+    response = requests.request("GET", url, headers=headers,
+                                params=querystring)
     return json.loads(response.text)[0]
 
 
