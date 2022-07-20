@@ -195,7 +195,11 @@ I have used several technologies that have enabled this game to work:
 
 ## Fixed bugs 
 
-- One bug was fund when re-palying the game. The issue was: the word was generated only one time when the code was loaded and the same word was stored in the variable even when the user select the option to replay the game at the end. 
+- Bug: One bug was fund when re-palying the game. The issue was: the word was generated only one time when the code was loaded and the same word was stored in the variable even when the user select the option to replay the game at the end. 
+
+- Fix: The root cause of this issue was found on the file "word.py" that contains the function requesting the random word from the API. The `response` variable that makes the actual request to the API was outside the function `getWord()`. To fix the issue I moved the request to inside the function `getWord()` and the request is made everytime that the function is called and a new random word is returned.
+
+![](./assets/bugfix.png)
 
 ## Supported screens and browsers
 
