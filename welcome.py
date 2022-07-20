@@ -21,7 +21,7 @@ def welcome():
         user_name = input("Please enter your name: \n")
         if str.isalpha(user_name):
             welcomeMessage = subtitleFont.renderText(f"Welcome \
-            to the hangman game, {user_name}")
+to the hangman game, {user_name}")
             print(Fore.LIGHTBLUE_EX + welcomeMessage + Fore.RESET)
             break
         elif len(user_name) == 0:
