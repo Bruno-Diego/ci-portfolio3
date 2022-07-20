@@ -22,7 +22,7 @@
     - [**Supported screens and browsers**](#supported-screens-and-browsers)
 
 5. [**Deployment**](#deployment)
-    - [**Using Github & Gitpod**](#using-github-&-Gitpod)
+    - [**Using Github and Gitpod**](#using-github-and-gitpod)
     - [**Creating an Application with Heroku**](#creating-an-application-with-heroku)
 6. [**Credits**](#credits)
 
@@ -205,7 +205,7 @@ I have used several technologies that have enabled this game to work:
 
 The main branch of this repository has been used for the deployed version of this application.
 
-### Using Github & Gitpod
+### Using Github and Gitpod
 
 To deploy my command-line interface application, I had to use the [Code Institute Python Essentials Template](https://github.com/Code-Institute-Org/python-essentials-template), as this enables the application to be properly viewed on Heroku using a mock terminal. 
 
