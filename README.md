@@ -1,8 +1,8 @@
 # CI Hangman Game
 
-![](./assets/docs/responsiveness.png)
+![](./assets/banner.png)
 
-[Access the Live CI Hangman Game Website here](https://#) (Ctrl + Click to open on a new tab)
+[Access the Live CI Hangman Game Website here](https://ci-portfolio3.herokuapp.com/) (Ctrl + Click to open on a new tab)
 
 ## Table of Contents
 1. [**UX**](#ux)
