@@ -124,7 +124,26 @@ I have used several technologies that have enabled this game to work:
 
 ## Code validation
 
+- For validation purposes I used [PEP8 online check](http://pep8online.com/):
+  - ### run.py PEP8 test
+    ![](./assets/pep8_run.png)
+
+  - ### welcome.py PEP8 test
+    ![](./assets/pep8_welcome.png)  
+  
+  - ### word.py PEP8 test
+    ![](./assets/pep8_word.png)
+  
+  - ### typingMode.py PEP8 test
+    ![](./assets/pep8_type.png)
+  
+  - ### ending.py PEP8 test
+    ![](./assets/pep8_ending.png)
+
+
 ## Test cases
+
+
 
 ## Fixed bugs 
 
