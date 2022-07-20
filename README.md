@@ -195,6 +195,8 @@ I have used several technologies that have enabled this game to work:
 
 ## Fixed bugs 
 
+- One bug was fund when re-palying the game. The issue was: the word was generated only one time when the code was loaded and the same word was stored in the variable even when the user select the option to replay the game at the end. 
+
 ## Supported screens and browsers
 
 - The website is fully responsive and can be accessed on smartphones (width of 600px and smaller), tablets (width of 820px and smaller) and monitors of any size.
