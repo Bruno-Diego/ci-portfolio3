@@ -107,6 +107,8 @@ Please note the actual website has changed slightly from these wireframes.
 
 I have used several technologies that have enabled this game to work:
 
+  - [Python 3](https://www.python.org/)
+    - Used as main programing language to develop the script for the game.
   - [GitHub](https://github.com/)
     - Used to store code for the project after being pushed.
   - [Git](https://git-scm.com/)
@@ -258,7 +260,7 @@ I followed the below steps using the Code Institute tutorial:
 *Heroku Settings*
 You will need to set your Environment Variables - this is a key step to ensuring your application is deployed properly.
 - In the Settings tab, click on `Reveal Config Vars` and set the following variables:
-    - If using credentials you will need to add the credentials as a variable, the key is the name 'CREDS' and the value is the contents of your creds JSON
+    - If using credentials you will need to add the credentials as a variable, the key is the name 'CREDS' and the value is the contents of your creds JSON file.
     - Add key: `PORT` & value `8000`
 - Buildpacks are also required for proper deployment, simply click `Add buildpack` and search for the ones that you require.
     - For this project, I needed to add `Python` and `Node.js`, in this order.
@@ -278,6 +280,7 @@ In the Deploy tab:
   - The code for the game was created by myself.
   - I have mostly used [PypI](https://pypi.org/) to find libraries I needed.
   - The use of an API to retrieve a random word was inspired by the Word Association tutorial found on the [Code with Ania Kubów](https://www.youtube.com/watch?v=dvckHkyV2kQ) Youtube Channel.
+  - The main idea for this project was taken from the hangman example project provided by Code Institute, found in this [repo](https://github.com/Code-Institute-Submissions/hangman-2) 
 
 ---
 
