@@ -280,7 +280,7 @@ In the Deploy tab:
   - The code for the game was created by myself.
   - I have mostly used [PypI](https://pypi.org/) to find libraries I needed.
   - The use of an API to retrieve a random word was inspired by the Word Association tutorial found on the [Code with Ania Kubów](https://www.youtube.com/watch?v=dvckHkyV2kQ) Youtube Channel.
-  - The main idea for this project was taken from the hangman example project provided by Code Institute, found in this [repo](https://github.com/Code-Institute-Submissions/hangman-2) 
+  - The main idea for this project was taken from the hangman example project provided by Code Institute, found in this [repo](https://github.com/Code-Institute-Submissions/hangman-2).
 
 ---
 
