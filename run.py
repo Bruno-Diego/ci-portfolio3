@@ -121,6 +121,7 @@ def start_game():
                 if incorrect == ATTEMPTS:
                     reveal_word = f"Answer is {word.upper()}"
                     typingMode(Fore.LIGHTRED_EX + reveal_word + Fore.RESET)
+                    print()
                     game_over()
                     break
                 else:
