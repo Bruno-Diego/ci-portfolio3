@@ -13,14 +13,13 @@ def game_over():
     gameOverText = gameOverTitleFont.renderText("Game Over")
     print(Fore.LIGHTRED_EX + gameOverText + Fore.RESET)
     typingMode("Better luck next time!\n")
+    print()
 
 
 def you_win():
     """
     Success ascii art with figlet
     """
-    print()
-    typingMode("Congratulations!")
     print()
     youWinTitleFont = Figlet(font="larry3d")
     youWinText = youWinTitleFont.renderText("You Win")

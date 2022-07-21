@@ -104,7 +104,8 @@ def start_game():
                     print(Fore.LIGHTBLUE_EX + right_letter + Fore.RESET)
                     correct_guess.add(guessed)  # Add correct letter to list
                     if correct_guess == set(word):
-                        print(word.upper())
+                        typingMode(word.upper())
+                        print()
                         print("CONGRATULATIONS!")
                         print(f"You completed the word {word.upper()}.")
                         you_win()
@@ -119,7 +120,7 @@ def start_game():
                 incorrect += 1    # Increment incorrect attempt
                 if incorrect == ATTEMPTS:
                     reveal_word = f"Answer is {word.upper()}"
-                    print(Fore.LIGHTRED_EX + reveal_word + Fore.RESET)
+                    typingMode(Fore.LIGHTRED_EX + reveal_word + Fore.RESET)
                     game_over()
                     break
                 else:
