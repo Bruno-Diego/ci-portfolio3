@@ -22,8 +22,6 @@ STAGES = ['\n  +---+\n  |   |\n      |\n\
           '\n  +---+\n  |   |\n  O   |\n\
  /|\  |\n /    |\n      |\n=========\n',
           '\n  +---+\n  |   |\n  O   |\n\
- /|\  |\n / \  |\n      |\n=========\n',
-          '\n  +---+\n  |   |\n  O   |\n\
  /|\  |\n / \  |\n      |\n=========\n| LAST CHANCE!\n']
 
 ATTEMPTS = len(STAGES)
@@ -33,12 +31,14 @@ def display_instructions():
     """
     Ask user if instruction is need and displays instruction as requested
     """
-    print("Would you like a brief instruction on how to play?")
+    instruction_q = "Would you like a brief instruction on how to play?"
+    print(Fore.LIGHTBLUE_EX + instruction_q + Fore.RESET)
     instruction_on = input("Press y if yes, any other key to play game : \n")
     if instruction_on.lower() == "y":
         instructions_text()
-        print("Are you ready to play?")
-        game_start = input("Press Any key to start a game >> \n")
+        ready_q = "Are you ready to play?"
+        print(Fore.LIGHTBLUE_EX + ready_q + Fore.RESET)
+        input("Press Any key to start the game >> \n")
     else:
         pass
 
@@ -47,8 +47,10 @@ def instructions_text():
     """
     Display instructions
     """
-    print("Here is instruction on how to play \n"
-          "1. A random word is chosen by the computer\n"
+    present_instr = "Here are the instructions on how to play:\n"
+    print()
+    print(Fore.LIGHTBLUE_EX + present_instr + Fore.RESET)
+    print("1. A random word is chosen by the computer\n"
           "2. The same number of Underscores '_' will be displayed \n"
           "   as letters in the word.\n"
           "3. Guess the word\n"
@@ -62,6 +64,7 @@ def instructions_text():
           " the hangman image will progress.\n"
           "8. If the number of incorrect attempts reaches the limit\n"
           "   and hangman image completes, game over!")
+    print()
 
 
 def start_game():
@@ -81,9 +84,10 @@ def start_game():
         # Print out _ for the remaining letters to guess
         for i in word:
             if i in correct_guess:
-                print(i, end=" ")
+                print(Fore.LIGHTBLUE_EX + i + Fore.RESET, end=" ")
             else:
-                print("_", end=" ")
+                empty_space = "_"
+                print(Fore.LIGHTRED_EX + empty_space + Fore.RESET, end=" ")
         print('\n')
         guessed = input("Enter one letter please!\n").upper()
         if str.isalpha(guessed):  # Checking if the input is non-numeric
@@ -96,7 +100,8 @@ def start_game():
                     display_already_used()
                     time.sleep(1)
                 else:
-                    print(f"{guessed.upper()} is the right answer!")
+                    right_letter = f"{guessed.upper()} is the right answer!"
+                    print(Fore.LIGHTBLUE_EX + right_letter + Fore.RESET)
                     correct_guess.add(guessed)  # Add correct letter to list
                     if correct_guess == set(word):
                         print(word.upper())
@@ -109,10 +114,12 @@ def start_game():
                 display_already_used()
                 time.sleep(1)
             else:
-                print(f"'{guessed.upper()}' is not in correct answer!")
+                wrong_letter = f"'{guessed.upper()}' is not in correct answer!"
+                print(Fore.LIGHTRED_EX + wrong_letter + Fore.RESET)
                 incorrect += 1    # Increment incorrect attempt
                 if incorrect == ATTEMPTS:
-                    print(f"Answer is {word.upper()}")
+                    reveal_word = f"Answer is {word.upper()}"
+                    print(Fore.LIGHTRED_EX + reveal_word + Fore.RESET)
                     game_over()
                     break
                 else:
@@ -139,9 +146,11 @@ def display_already_used():
 
 
 def replay():
-    print("Would you like to play again?")
-    print("Enter y or press RUN PROGRAM button above to play again."
-          "or press any other key to exit the game.")
+    typingMode("Would you like to play again?")
+    print()
+    retry_game = "Enter y or press RUN PROGRAM button above to play again."
+    print(Fore.LIGHTBLUE_EX + retry_game + Fore.RESET)
+    print("or press any other key to exit the game.")
     play_again = input(
         "Please press y to play, any other key to exit the game \n")
     if play_again.lower() == "y":
