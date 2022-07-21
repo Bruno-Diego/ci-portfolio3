@@ -29,4 +29,5 @@ to the hangman game, {user_name}")
             print(Fore.LIGHTRED_EX + ins_char + Fore.RESET)
             print("Please enter your name or nickname.\n")
         else:
-            print("Only letters are allowed")
+            ins_letter = "Only letters are allowed"
+            print(Fore.LIGHTRED_EX + ins_letter + Fore.RESET)
